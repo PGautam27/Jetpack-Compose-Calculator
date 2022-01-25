@@ -1,5 +1,5 @@
 package com.example.kotlincalculator.repository
-/*
+
 import androidx.lifecycle.LiveData
 import com.example.kotlincalculator.dao.Dao1
 import com.example.kotlincalculator.entity.Entity1
@@ -14,4 +14,4 @@ class Repository(private val dao1: Dao1) {
     suspend fun deleteAllRecord(){
         dao1.deleteAllRecord()
     }
-}*/
+}

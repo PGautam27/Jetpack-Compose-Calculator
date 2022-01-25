@@ -1,5 +1,5 @@
 package com.example.kotlincalculator.viewmodel
-/*
+
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
@@ -34,8 +34,8 @@ class ViewModel1(application: Application): AndroidViewModel(application) {
             repository.deleteAllRecord()
         }
     }
-}*/
-/*
+}
+
 class ViewModelFactory(
     private val application: Application
 ): ViewModelProvider.Factory{
@@ -46,4 +46,4 @@ class ViewModelFactory(
         }
         throw IllegalArgumentException("Unknown ViewModel class")
     }
-}*/
+}

@@ -480,26 +480,31 @@ fun calcScreen() {
                     else
                         if (charHold.value == '*'){
                             ansValue.value*=ansHold.value
+                            ansHold.value=0
                             result = true
                             charHold.value='0'
                         }
                         else if (charHold.value == '-'){
                             ansValue.value-=ansHold.value
+                            ansHold.value=0
                             result = true
                             charHold.value='0'
                         }
                         else if (charHold.value == '+'){
                             ansValue.value+=ansHold.value
+                            ansHold.value=0
                             result = true
                             charHold.value='0'
                         }
                         else if (charHold.value == '%'){
                             ansValue.value%=ansHold.value
+                            ansHold.value=0
                             result = true
                             charHold.value='0'
                         }
                         else if (charHold.value == '/'){
                             ansValue.value/=ansHold.value
+                            ansHold.value=0
                             result = true
                             charHold.value='0'
                         }
@@ -509,14 +514,14 @@ fun calcScreen() {
             }
         }
         Spacer(modifier = Modifier.padding(10.dp))
-        Button(onClick = { ansValue.value += 20 },modifier = Modifier
+        Button(onClick = { },modifier = Modifier
             .height(50.dp)
             .width(100.dp)
             .border(
                 BorderStroke(width = 2.dp, color = Color.Black),
                 shape = RoundedCornerShape(12.dp)
             )) {
-            Text(text = "Increment",style = TextStyle(color = Color.Black, fontWeight = FontWeight.Bold, fontSize = 20.sp))
+            Text(text = "History",style = TextStyle(color = Color.Black, fontWeight = FontWeight.Bold, fontSize = 20.sp))
         }
     }
 }

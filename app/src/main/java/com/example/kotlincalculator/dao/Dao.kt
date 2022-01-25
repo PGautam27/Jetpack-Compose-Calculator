@@ -1,5 +1,5 @@
 package com.example.kotlincalculator.dao
-/*
+
 import androidx.lifecycle.LiveData
 import androidx.room.*
 import androidx.room.Dao
@@ -15,4 +15,4 @@ interface Dao1 {
 
     @Query("DELETE FROM Data")
     suspend fun deleteAllRecord()
-}*/
+}
